@@ -8,8 +8,8 @@
       src="https://kit.fontawesome.com/87db992a9a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.scss" />
-    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <title>Profile Card</title>
   </head>
   <body>
@@ -24,81 +24,72 @@
       <div class="profile-card__desc">
         <h1>Ivaylo Dechkoff</h1>
         <div>IT Berater / Support</div>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-gps"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="M12 17l-1 -4l-4 -1l9 -4z"></path>
-          </svg>
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+          "
+        >
+          <i class="fa-solid fa-location-dot"></i>
           <a
             href="https://maps.google.com/?q=CompuSoft%20A/S%20Sunek%c3%a6r+9+5471"
           >
-            <span>Sunekær 9 • 5471 Søndersø • Danmark</span>
+            <div>Søndersø, Danmark</div>
           </a>
         </div>
       </div>
 
-      <div class="profile-card__info">
-        <div style="display: flex; align-items: center; gap: 10px">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-phone-call"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
-            ></path>
-            <path d="M15 7a2 2 0 0 1 2 2"></path>
-            <path d="M15 3a6 6 0 0 1 6 6"></path>
-          </svg>
-          <a href="tel:004563186318">
-            <span>+45 6318 6318</span>
+      <div class="profile-card__actions">
+        <div class="red">
+          <a href="tel:004563186319">
+            <i class="fa-solid fa-phone-volume"></i>
           </a>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-mail"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-            <polyline points="3 7 12 13 21 7"></polyline>
-          </svg>
+        <div class="gradient">
+          <a href="./files/contact_ivd.vcf">
+            <i class="fa-solid fa-address-book"></i>
+          </a>
+        </div>
+        <div class="black">
+          <a href="mailto:ivd@compusoft.dk">
+            <i class="fa-solid fa-at"></i>
+          </a>
+        </div>
+      </div>
+      <div class="profile-card__info">
+        <div>
+          <i class="fa-solid fa-envelope-circle-check"></i>
           <a href="mailto:ivd@compusoft.dk">
             <span>ivd@compusoft.dk</span>
           </a>
         </div>
-        <div style="display: flex; align-items: center; gap: 10px">
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <a href="tel:004563186319">
+            <span>Telefon:+4563186319</span>
+          </a>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <a href="https://compusoft.dk">
+            <span>www.compusoft.dk</span>
+          </a>
+        </div>
+        <div>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <a href="https://www.linkedin.com/in/ivaylo-dechkoff-7499b538/">
+            <span>Mein LinkedIn Profil</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="profile-card__social">
+        <a href="#" class="facebook">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-world-www"
+            class="icon icon-tabler icon-tabler-brand-facebook"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -110,24 +101,30 @@
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
             <path
-              d="M19.5 7a8.998 8.998 0 0 0 -7.5 -4a8.991 8.991 0 0 0 -7.484 4"
+              d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
             ></path>
-            <path d="M11.5 3a16.989 16.989 0 0 0 -1.826 4"></path>
-            <path d="M12.5 3a16.989 16.989 0 0 1 1.828 4.004"></path>
-            <path
-              d="M19.5 17a8.998 8.998 0 0 1 -7.5 4a8.991 8.991 0 0 1 -7.484 -4"
-            ></path>
-            <path d="M11.5 21a16.989 16.989 0 0 1 -1.826 -4"></path>
-            <path d="M12.5 21a16.989 16.989 0 0 0 1.828 -4.004"></path>
-            <path d="M2 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-            <path d="M17 10l1 4l1.5 -4l1.5 4l1 -4"></path>
-            <path d="M9.5 10l1 4l1.5 -4l1.5 4l1 -4"></path>
           </svg>
-          <a href="https://compusoft.dk">
-            <span>www.compusoft.dk</span>
-          </a>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px">
+        </a>
+        <a href="#" class="instagram">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-instagram"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <rect x="4" y="4" width="16" height="16" rx="4"></rect>
+            <circle cx="12" cy="12" r="3"></circle>
+            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
+          </svg>
+        </a>
+        <a href="#" class="linkedin">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-linkedin"
@@ -147,22 +144,10 @@
             <line x1="12" y1="16" x2="12" y2="11"></line>
             <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
           </svg>
-          <a href="https://www.linkedin.com/in/ivaylo-dechkoff-7499b538/">
-            <span>Linked In</span>
-          </a>
-        </div>
+        </a>
       </div>
-
-      <div class="profile-card__social">
-        <a href="#" class="facebook"></a>
-        <a href="#" class="instagram"></a>
-        <a href="#" class="linkedin"></a>
-      </div>
-
-      <div class="profile-card__actions">
-        <button class="red">Anruf</button>
-        <button class="black">Speichern</button>
-        <button class="gradient">E-Mail</button>
+      <div class="img-wrapper">
+        <img src="./img/compusoft-logo.png" alt="" />
       </div>
     </div>
   </body>
