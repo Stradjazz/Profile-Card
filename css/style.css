@@ -14,7 +14,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: url("../img/cs-bg-2.png") no-repeat bottom;
+  background: url("../img/polygon-bg.jpg") no-repeat center;
   background-size: cover;
   animation: backgroundZoomAnimation 20s forwards;
 }
@@ -32,7 +32,7 @@ body::before {
   border-radius: 50px;
   width: 650px;
   position: relative;
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(15px);
   border: 2px solid rgba(255, 255, 255, 0.2509803922);
   padding: 3rem 5rem;
   display: flex;
@@ -232,7 +232,7 @@ body::before {
   }
 }
 .profile-card__actions > div.gradient {
-  background: linear-gradient(45deg, #94151a, #B9292F, #fd2930, #231F20, #1d1719, #000);
+  background: linear-gradient(45deg, #000, #B8292F);
   box-shadow: 0 4px 30px rgba(230, 38, 38, 0.5);
   display: flex;
   flex-direction: column;
