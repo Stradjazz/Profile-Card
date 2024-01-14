@@ -240,8 +240,8 @@ body::before {
   align-items: center;
 }
 .profile-card .img-wrapper {
-  max-width: 150px;
-  margin: auto;
+  max-width: 80px;
+  margin: 0 auto;
 }
 .profile-card .img-wrapper > img {
   width: 100%;
